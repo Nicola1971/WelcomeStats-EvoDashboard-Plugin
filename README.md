@@ -1,4 +1,4 @@
-WelcomeStats-Plugin 1.3 RC
+WelcomeStats OMWC Plugin for MODx Evolution v1.3 RC
 ===================
 
 Dashboard MODX Stats widget for OnManagerWelcomeCustom plugin
@@ -16,15 +16,15 @@ https://github.com/Nicola1971/OnManagerWelcomeCustom-plugin
 
 #### MODxFLAT with WelcomeStats :
 
-![dashboard with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-Plugin/master/flat-stats.jpg)
+![dashboard with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/flat-stats.jpg)
 
 #### MODxRE-D with WelcomeStats :
 
-![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-Plugin/master/re-d-stats.jpg)
+![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/re-d-stats.jpg)
 
 # Plugin Configuration
 
-![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-Plugin/master/13-plugin-config.jpg)
+![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/13-plugin-config.jpg)
 
 
 
