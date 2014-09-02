@@ -1,4 +1,4 @@
-WelcomeStats OMWC Plugin for MODx Evolution v1.3 RC
+WelcomeStats OMWC Plugin for MODx Evolution v2.0 RC
 ===================
 
 Dashboard MODX Stats widget for OnManagerWelcomeCustom plugin
@@ -9,6 +9,15 @@ Dashboard MODX Stats widget for OnManagerWelcomeCustom plugin
 * Web Users
 * Manager Users
 * Admins
+
+#Styles
+
+1) Box
+![stat](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/stats.jpg)
+2) Round
+![stat](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/round-stats.jpg)
+3) Lite
+![stat](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/lite-stats.jpg)
 
 requires:
 **OnManagerWelcomeCustom Plugin**
@@ -30,6 +39,11 @@ https://github.com/Nicola1971/OnManagerWelcomeCustom-plugin
 
 
 # Updates
+
+### RC 2.0
+* Moved plugin code into the plugin folder
+* Added two new styles (round and lite)
+
 
 ### RC 1.3
 * Widget Box placement and Box size parametes 
