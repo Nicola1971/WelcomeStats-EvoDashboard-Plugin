@@ -56,7 +56,7 @@ if($e->name == 'OnManagerMainFrameHeaderHTMLBlock') {
     if ($Style == lite) {$cssOutput = '<link type="text/css" rel="stylesheet" href="../assets/plugins/welcomestats/lite.css">';}
 }
 if($e->name == ''.$StatsEvent.'') {
-   $Statsoutput = '<div class="'.$StatsBoxSize.'"> <div class="sectionHeader"><i class="fa fa-signal"></i> '.$MODxStatsTitle.'<a href="javascript:void(null);" onclick="doHideShow(\'idShowHide11\');"><i class="fa fa-bars expandbuttn"></i></a></div><div id="idShowHide11" class="sectionBody"><div class="statcontainer">
+   $Statsoutput = '<div class="'.$StatsBoxSize.'"> <div class="sectionHeader"><i class="fa fa-bar-chart-o"></i> '.$MODxStatsTitle.'<a href="javascript:void(null);" onclick="doHideShow(\'idShowHide11\');"><i class="fa fa-bars expandbuttn"></i></a></div><div id="idShowHide11" class="sectionBody"><div class="statcontainer">
 <div class="statbox sblue"><div class="icon"><i class="fa fa-file fa-4x"></i></div><div class="count"><h3> '.$num.' </h3> '.$DocCountLabel.' </div></div>
 <div class="statbox sgreen"><div class="icon"><i class="fa fa-users fa-4x"></i></div><div class="count"><h3> '.$count.' </h3> '.$WebUserCountLabel.' </div></div>
 <div class="statbox syellow"><div class="icon"><i class="fa fa-user fa-4x"></i></div><div class="count"><h3> '.$userscount.' </h3> '.$UserCountLabel.' </div></div>
