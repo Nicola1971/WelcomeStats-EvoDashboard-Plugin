@@ -1,4 +1,4 @@
-WelcomeStats OMWC Plugin for EvoDashboard v2.0 RC
+WelcomeStats Plugin for EvoDashboard v2.0 RC
 ===================
 
 Dashboard MODX Stats widget for for EvoDashboard 
