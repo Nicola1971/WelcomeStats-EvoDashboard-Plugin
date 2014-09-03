@@ -1,7 +1,12 @@
 WelcomeStats OMWC Plugin for MODx Evolution v2.0 RC
 ===================
 
-Dashboard MODX Stats widget for EvoDashboard and OnManagerWelcomeCustom plugin
+Dashboard MODX Stats widget for for EvoDashboard and OnManagerWelcomeCustom
+
+requires: 
+EvoDashboard: https://github.com/Nicola1971/EvoDashboard-plugin
+or 
+OnManagerWelcomeCustom Plugin https://github.com/Nicola1971/OnManagerWelcomeCustom-plugin
 
 **System Stat Counter for MODx Evolution**
 
