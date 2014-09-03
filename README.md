@@ -1,12 +1,10 @@
-WelcomeStats OMWC Plugin for MODx Evolution v2.0 RC
+WelcomeStats OMWC Plugin for EvoDashboard v2.0 RC
 ===================
 
-Dashboard MODX Stats widget for for EvoDashboard and OnManagerWelcomeCustom
+Dashboard MODX Stats widget for for EvoDashboard 
 
 requires: 
 EvoDashboard: https://github.com/Nicola1971/EvoDashboard-plugin
-or 
-OnManagerWelcomeCustom Plugin https://github.com/Nicola1971/OnManagerWelcomeCustom-plugin
 
 **System Stat Counter for MODx Evolution**
 
@@ -14,6 +12,10 @@ OnManagerWelcomeCustom Plugin https://github.com/Nicola1971/OnManagerWelcomeCust
 * Web Users
 * Manager Users
 * Admins
+
+
+### More infos at:
+http://www.tattoocms.it/extras/plugins/welcomestats-dashboard-widget.html
 
 #Styles
 
@@ -24,24 +26,10 @@ OnManagerWelcomeCustom Plugin https://github.com/Nicola1971/OnManagerWelcomeCust
 3) Lite
 ![stat](https://raw.githubusercontent.com/Nicola1971/training-materials/master/Images/statbox/lite-stats.jpg)
 
-requires:
-**OnManagerWelcomeCustom Plugin**
-https://github.com/Nicola1971/OnManagerWelcomeCustom-plugin
-
-#### MODxFLAT with WelcomeStats :
-
-![dashboard with plugin](https://raw.githubusercontent.com/Nicola1971/training-materials/master/Images/statbox/flat-stats.jpg)
-
-#### MODxRE-D with WelcomeStats :
-
-![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/training-materials/master/Images/statbox/re-d-stats.jpg)
 
 # Plugin Configuration
 
 ![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/training-materials/master/Images/statbox/13-plugin-config.jpg)
-
-
-
 
 # Updates
 
