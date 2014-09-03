@@ -18,11 +18,11 @@ OnManagerWelcomeCustom Plugin https://github.com/Nicola1971/OnManagerWelcomeCust
 #Styles
 
 1) Box
-![stat](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/stats.jpg)
+![stat](https://github.com/Nicola1971/training-materials/tree/master/Images/statbox/stats.jpg)
 2) Round
-![stat](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/round-stats.jpg)
+![stat](https://github.com/Nicola1971/training-materials/tree/master/Images/statbox/round-stats.jpg)
 3) Lite
-![stat](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/lite-stats.jpg)
+![stat](https://github.com/Nicola1971/training-materials/tree/master/Images/statbox/lite-stats.jpg)
 
 requires:
 **OnManagerWelcomeCustom Plugin**
@@ -30,15 +30,15 @@ https://github.com/Nicola1971/OnManagerWelcomeCustom-plugin
 
 #### MODxFLAT with WelcomeStats :
 
-![dashboard with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/flat-stats.jpg)
+![dashboard with plugin](https://github.com/Nicola1971/training-materials/tree/master/Images/statbox/flat-stats.jpg)
 
 #### MODxRE-D with WelcomeStats :
 
-![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/re-d-stats.jpg)
+![dashboard2 with plugin](https://github.com/Nicola1971/training-materials/tree/master/Images/statbox/re-d-stats.jpg)
 
 # Plugin Configuration
 
-![dashboard2 with plugin](https://raw.githubusercontent.com/Nicola1971/WelcomeStats-OMWC-Plugin/master/13-plugin-config.jpg)
+![dashboard2 with plugin](https://github.com/Nicola1971/training-materials/tree/master/Images/statbox/13-plugin-config.jpg)
 
 
 
