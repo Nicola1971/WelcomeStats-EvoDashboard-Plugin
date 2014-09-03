@@ -2,7 +2,7 @@
 /**
  * WelcomeStats
  *
- * Dashboard MODX Stats widget plugin for OnManagerWelcomeCustom
+ * Dashboard MODX Stats widget plugin for EvoDashboard
  *
  * @author    Nicola Lambathakis
  * @category    plugin
