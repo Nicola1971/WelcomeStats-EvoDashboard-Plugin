@@ -1,14 +1,15 @@
 <?php
 /**
- * WelcomeStats RC 1.3
+ * WelcomeStats RC 1.4
  *
  * Dashboard MODX Stats widget plugin for OnManagerWelcomeCustom
- * Event: OnManagerWelcomeHome,OnManagerWelcomeRender,OnManagerMainFrameHeaderHTMLBlock
- * Configuration: &StatsEvent= System Event:;list;OnManagerWelcomeHome,OnManagerWelcomeRender;OnManagerWelcomeHome &StatsBoxSize= Stats Box size:;list;dashboard-block-full,dashboard-block-half;dashboard-block-full &MODxStatsTitle= MODx Stats Title:;string;MODx Stats  &DocCountLabel= Documents count label:;string;Documents &startID= Documents count parent:;string;0 &WebUserCountLabel= Web Users label:;string;Web Users &webGroup= Users Web Group:;string;all &UserCountLabel= Manager Users label:;string;Manager Users &AdminCountLabel= Admin label:;string;Admins &Style= Style:;list;box,round,lite;box
+ * Event: OnManagerWelcomePrerender,OnManagerWelcomeHome,OnManagerWelcomeRender,OnManagerMainFrameHeaderHTMLBlock
+ * Configuration: &StatsEvent= System Event:;list;OnManagerWelcomePrerender,OnManagerWelcomeHome,OnManagerWelcomeRender;OnManagerWelcomePrerender &StatsBoxSize= Stats Box size:;list;dashboard-block-full,dashboard-block-half;dashboard-block-full &MODxStatsTitle= MODx Stats Title:;string;MODx Stats  &DocCountLabel= Documents count label:;string;Documents &startID= Documents count parent:;string;0 &WebUserCountLabel= Web Users label:;string;Web Users &webGroup= Users Web Group:;string;all &UserCountLabel= Manager Users label:;string;Manager Users &AdminCountLabel= Admin label:;string;Admins &Style= Style:;list;box,round,lite;box
  */
 
-$StatsEvent = isset($EvoEvent) ? $EvoEvent : 'OnManagerWelcomeHome';
 $StatsBoxSize = isset($StatsBoxSize) ? $StatsBoxSize : 'dashboard-block-full';
+//events
+$StatsEvent = isset($StatsEvent) ? $StatsEvent : 'OnManagerWelcomePrerender';
 //styles
 $Style = isset($Style) ? $Style : 'box';
 // documents counter
