@@ -1,15 +1,20 @@
 <?php
 /**
- * WelcomeStats RC 1.4
+ * WelcomeStats RC 2.0
  *
  * Dashboard MODX Stats widget plugin for OnManagerWelcomeCustom
- * Event: OnManagerWelcomePrerender,OnManagerWelcomeHome,OnManagerWelcomeRender,OnManagerMainFrameHeaderHTMLBlock
- * Configuration: &StatsEvent= System Event:;list;OnManagerWelcomePrerender,OnManagerWelcomeHome,OnManagerWelcomeRender;OnManagerWelcomePrerender &StatsBoxSize= Stats Box size:;list;dashboard-block-full,dashboard-block-half;dashboard-block-full &MODxStatsTitle= MODx Stats Title:;string;MODx Stats  &DocCountLabel= Documents count label:;string;Documents &startID= Documents count parent:;string;0 &WebUserCountLabel= Web Users label:;string;Web Users &webGroup= Users Web Group:;string;all &UserCountLabel= Manager Users label:;string;Manager Users &AdminCountLabel= Admin label:;string;Admins &Style= Style:;list;box,round,lite;box
+ * Event: OnManagerWelcomeHome,OnManagerWelcomeRender,OnManagerMainFrameHeaderHTMLBlock
+ * Configuration: &StatsEvent= System Event:;list;OnManagerWelcomeHome,OnManagerWelcomeRender;OnManagerWelcomeHome &StatsBoxSize= Stats Box size:;list;dashboard-block-full,dashboard-block-half;dashboard-block-full &MODxStatsTitle= MODx Stats Title:;string;MODx Stats  &DocCountLabel= Documents count label:;string;Documents &startID= Documents count parent:;string;0 &WebUserCountLabel= Web Users label:;string;Web Users &webGroup= Users Web Group:;string;all &UserCountLabel= Manager Users label:;string;Manager Users &AdminCountLabel= Admin label:;string;Admins &Style= Style:;list;box,round,lite;box
  */
 
 $StatsBoxSize = isset($StatsBoxSize) ? $StatsBoxSize : 'dashboard-block-full';
-//events
-$StatsEvent = isset($StatsEvent) ? $StatsEvent : 'OnManagerWelcomePrerender';
+$StatsContainerSize = isset($StatsContainerSize) ? $StatsContainerSize : 'col-sm-6';
+//widget grid size
+if ($StatsBoxSize == 'dashboard-block-full') {
+$StatsBoxWidth = 'col-sm-12';
+} else {
+$StatsBoxWidth = 'col-sm-6';
+}
 //styles
 $Style = isset($Style) ? $Style : 'box';
 // documents counter
@@ -57,13 +62,14 @@ if($e->name == 'OnManagerMainFrameHeaderHTMLBlock') {
     if ($Style == lite) {$cssOutput = '<link type="text/css" rel="stylesheet" href="../assets/plugins/welcomestats/lite.css">';}
 }
 if($e->name == ''.$StatsEvent.'') {
-   $Statsoutput = '<div class="'.$StatsBoxSize.'"> <div class="sectionHeader"><i class="fa fa-bar-chart-o"></i> '.$MODxStatsTitle.'<a href="javascript:void(null);" onclick="doHideShow(\'idShowHide11\');"><i class="fa fa-bars expandbuttn"></i></a></div><div id="idShowHide11" class="sectionBody"><div class="statcontainer">
-<div class="statbox sblue"><div class="icon"><i class="fa fa-file fa-4x"></i></div><div class="count"><h3> '.$num.' </h3> '.$DocCountLabel.' </div></div>
-<div class="statbox sgreen"><div class="icon"><i class="fa fa-users fa-4x"></i></div><div class="count"><h3> '.$count.' </h3> '.$WebUserCountLabel.' </div></div>
-<div class="statbox syellow"><div class="icon"><i class="fa fa-user fa-4x"></i></div><div class="count"><h3> '.$userscount.' </h3> '.$UserCountLabel.' </div></div>
-<div class="statbox sred"><div class="icon"><i class="fa fa-user-md fa-4x"></i></div><div class="count"><h3> '.$admincount.' </h3> '.$AdminCountLabel.' </div></div>
+	if ($Style == box) {$StatsContainerSize = 'col-sm-12';}
+   $Statsoutput = '<div class="'.$StatsBoxWidth.'"><div class="widget-wrapper"> <div class="widget-title sectionHeader"><i class="fa fa-bar-chart-o"></i> '.$MODxStatsTitle.'</div><div class="widget-stage sectionBody"><div class="statcontainer '.$StatsContainerSize.'">
+<div class="col-lg-3 col-md-6"><div class="statbox sblue"><div class="staticon"><i class="fa fa-file fa-4x"></i></div><div class="count"><h3> '.$num.' </h3> '.$DocCountLabel.' </div></div> </div>
+<div class="col-lg-3 col-md-6"><div class="statbox sgreen"><div class="staticon"><i class="fa fa-users fa-4x"></i></div><div class="count"><h3> '.$count.' </h3> '.$WebUserCountLabel.' </div></div> </div>
+<div class="col-lg-3 col-md-6"><div class="statbox syellow"><div class="staticon"><i class="fa fa-user fa-4x"></i></div><div class="count"><h3> '.$userscount.' </h3> '.$UserCountLabel.' </div></div> </div>
+<div class="col-lg-3 col-md-6"><div class="statbox sred"><div class="staticon"><i class="fa fa-user-md fa-4x"></i></div><div class="count"><h3> '.$admincount.' </h3> '.$AdminCountLabel.' </div></div> </div>
 <div class="clear"></div> </div>
-	</div></div>';
+	</div></div></div>';
 }
 $output .= $cssOutput.$Statsoutput;
 $e->output($output);

@@ -6,7 +6,7 @@
  *
  * @author    Nicola Lambathakis
  * @category    plugin
- * @version    2.0 RC
+ * @version    2.1 RC
  * @license	 http://www.gnu.org/copyleft/gpl.html GNU Public License (GPL)
  * @internal    @events OnManagerWelcomePrerender,OnManagerWelcomeHome,OnManagerWelcomeRender,OnManagerMainFrameHeaderHTMLBlock
  * @internal    @installset base
@@ -15,7 +15,7 @@
  */
 
 /**
- * WelcomeStats RC 2.0
+ * WelcomeStats RC 2.1
  *
  * Dashboard MODX Stats widget plugin for OnManagerWelcomeCustom
  * Event: OnManagerWelcomeHome,OnManagerWelcomeRender,OnManagerMainFrameHeaderHTMLBlock
