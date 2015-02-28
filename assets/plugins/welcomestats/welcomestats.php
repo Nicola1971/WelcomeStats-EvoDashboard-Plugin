@@ -64,10 +64,10 @@ if($e->name == 'OnManagerMainFrameHeaderHTMLBlock') {
 if($e->name == ''.$StatsEvent.'') {
 	if ($Style == box) {$StatsContainerSize = 'col-sm-12';}
    $Statsoutput = '<div class="'.$StatsBoxWidth.'"><div class="widget-wrapper"> <div class="widget-title sectionHeader"><i class="fa fa-bar-chart-o"></i> '.$MODxStatsTitle.'</div><div class="widget-stage sectionBody"><div class="statcontainer '.$StatsContainerSize.'">
-<div class="col-lg-3 col-md-6"><div class="statbox sblue"><div class="staticon"><i class="fa fa-file fa-4x"></i></div><div class="count"><h3> '.$num.' </h3> '.$DocCountLabel.' </div></div> </div>
-<div class="col-lg-3 col-md-6"><div class="statbox sgreen"><div class="staticon"><i class="fa fa-users fa-4x"></i></div><div class="count"><h3> '.$count.' </h3> '.$WebUserCountLabel.' </div></div> </div>
-<div class="col-lg-3 col-md-6"><div class="statbox syellow"><div class="staticon"><i class="fa fa-user fa-4x"></i></div><div class="count"><h3> '.$userscount.' </h3> '.$UserCountLabel.' </div></div> </div>
-<div class="col-lg-3 col-md-6"><div class="statbox sred"><div class="staticon"><i class="fa fa-user-md fa-4x"></i></div><div class="count"><h3> '.$admincount.' </h3> '.$AdminCountLabel.' </div></div> </div>
+<div class="col-md-3 col-sm-6"><div class="statbox sblue"><div class="staticon"><i class="fa fa-file fa-4x"></i></div><div class="count"><h3> '.$num.' </h3> '.$DocCountLabel.' </div></div> </div>
+<div class="col-md-3 col-sm-6"><div class="statbox sgreen"><div class="staticon"><i class="fa fa-users fa-4x"></i></div><div class="count"><h3> '.$count.' </h3> '.$WebUserCountLabel.' </div></div> </div>
+<div class="col-md-3 col-sm-6"><div class="statbox syellow"><div class="staticon"><i class="fa fa-user fa-4x"></i></div><div class="count"><h3> '.$userscount.' </h3> '.$UserCountLabel.' </div></div> </div>
+<div class="col-md-3 col-sm-6"><div class="statbox sred"><div class="staticon"><i class="fa fa-user-md fa-4x"></i></div><div class="count"><h3> '.$admincount.' </h3> '.$AdminCountLabel.' </div></div> </div>
 <div class="clear"></div> </div>
 	</div></div></div>';
 }
