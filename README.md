@@ -1,4 +1,4 @@
-WelcomeStats Plugin for EvoDashboard v2.1 RC
+WelcomeStats Plugin for EvoDashboard v3.1 RC
 ===================
 
 Dashboard MODX Stats widget for for EvoDashboard 
@@ -20,6 +20,8 @@ http://www.tattoocms.it/extras/plugins/welcomestats-dashboard-widget.html
 
 
 # Updates
+### PL 3.1
+* Updated for EvoDashboard 3.1
 
 ### RC 2.1
 * Updated for EvoDashboard 2.0
