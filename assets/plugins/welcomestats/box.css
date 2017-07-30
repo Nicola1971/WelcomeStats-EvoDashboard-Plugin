@@ -19,3 +19,15 @@ width: 100%;
 .syellow {background-color: #f0ad4e;}
 .sgreen {background-color: #5cb85c;}
 .sblue {background-color: #428bca;}
+
+.btn-group .panel-setting {
+  margin-top : -7px;
+  background:transparent;
+  border:none!important;
+  outline: 0;
+  color: #ccc!important;
+}
+.btn-group .panel-setting:hover {
+  color: #3d7bea;
+  border:none;
+}

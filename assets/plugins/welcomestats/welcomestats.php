@@ -2,10 +2,24 @@
 /**
  * WelcomeStats RC 3.1.3
  *
- * Dashboard MODX Stats widget plugin for EvoDashboard
+ * Dashboard Stats widget plugin for EvoDashboard
  * Event: OnManagerWelcomePrerender,OnManagerMainFrameHeaderHTMLBlock
- * Configuration: &WidgetTitle= MODx Stats Title:;string;MODx Stats  &DocCountLabel= Documents count label:;string;Documents &startID= Documents count parent:;string;0 &WebUserCountLabel= Web Users label:;string;Web Users &webGroup= Users Web Group:;string;all &UserCountLabel= Manager Users label:;string;Manager Users &AdminCountLabel= Admin label:;string;Admins &Style= Style:;list;box,round,lite;box &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;4 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;3
+ * Configuration: &wdgVisibility=Show widget for:;menu;All,AdminOnly;show &WidgetTitle= MODx Stats Title:;string;MODx Stats  &DocCountLabel= Documents count label:;string;Documents &startID= Documents count parent:;string;0 &WebUserCountLabel= Web Users label:;string;Web Users &webGroup= Users Web Group:;string;all &UserCountLabel= Manager Users label:;string;Manager Users &AdminCountLabel= Admin label:;string;Admins &Style= Style:;list;box,round,lite;box &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;4 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;3
  */
+// get manager role
+$role = $_SESSION['mgrRole'];          
+if(($role!=1) AND ($wdgVisibility == 'AdminOnly')) {}
+else {
+// get language
+global $modx,$_lang;
+// get plugin id
+$result = $modx->db->select('id', $this->getFullTableName("site_plugins"), "name='{$modx->event->activePlugin}' AND disabled=0");
+$pluginid = $modx->db->getValue($result);
+if($modx->hasPermission('edit_plugin')) {
+$button_pl_config = '<a data-toggle="tooltip" title="' . $_lang["settings_config"] . '" href="index.php?id='.$pluginid.'&a=102" class="btn panel-setting"><i class="fa fa-cog"></i> </a>';
+}
+$modx->setPlaceholder('button_pl_config', $button_pl_config);
+    
 /*widget name*/
 $WidgetID = isset($WidgetID) ? $WidgetID : 'DashboardStats';
 // size and position
@@ -84,7 +98,7 @@ $WidgetOutput = '
                           <span class="pull-left"><i class="fa fa-bar-chart-o"></i> '.$WidgetTitle.'</span>
                             <div class="widget-controls pull-right">
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-default btn-xs panel-hide hide-full fa fa-minus" data-id="'.$WidgetID.'"></a>
+                                 '.$button_pl_config.' <a href="#" class="btn btn-default btn-xs panel-hide hide-full fa fa-minus" data-id="'.$WidgetID.'"></a>
                                 </div>     
                             </div>
 
@@ -104,4 +118,5 @@ $WidgetOutput = '
 $output .= $cssOutput.$WidgetOutput;
 $e->output($output);
 return;
+}
 ?>
