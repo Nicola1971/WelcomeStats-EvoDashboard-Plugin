@@ -1,4 +1,4 @@
-WelcomeStats Plugin for EvoDashboard v3.1 RC
+WelcomeStats Plugin for EvoDashboard v3.1.3 RC
 ===================
 
 EVO CMS Dashboard Stats widget for EvoDashboard 
