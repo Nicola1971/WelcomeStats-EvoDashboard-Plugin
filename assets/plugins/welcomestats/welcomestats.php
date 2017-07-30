@@ -1,9 +1,9 @@
 <?php
 /**
- * WelcomeStats RC 3.1
+ * WelcomeStats RC 3.1.3
  *
  * Dashboard MODX Stats widget plugin for EvoDashboard
- * Event: OnManagerWelcomeHome,OnManagerWelcomeRender,OnManagerMainFrameHeaderHTMLBlock
+ * Event: OnManagerWelcomePrerender,OnManagerMainFrameHeaderHTMLBlock
  * Configuration: &WidgetTitle= MODx Stats Title:;string;MODx Stats  &DocCountLabel= Documents count label:;string;Documents &startID= Documents count parent:;string;0 &WebUserCountLabel= Web Users label:;string;Web Users &webGroup= Users Web Group:;string;all &UserCountLabel= Manager Users label:;string;Manager Users &AdminCountLabel= Admin label:;string;Admins &Style= Style:;list;box,round,lite;box &datarow=widget row position:;list;1,2,3,4,5,6,7,8,9,10;1 &datacol=widget col position:;list;1,2,3,4;1 &datasizex=widget x size:;list;1,2,3,4;4 &datasizey=widget y size:;list;1,2,3,4,5,6,7,8,9,10;3
  */
 /*widget name*/
@@ -16,7 +16,7 @@ $datasizey = isset($datasizey) ? $datasizey : '2';
 //output
 $WidgetOutput = isset($WidgetOutput) ? $WidgetOutput : '';
 //events
-$EvoEvent = isset($EvoEvent) ? $EvoEvent : 'OnManagerWelcomeHome';
+$EvoEvent = isset($EvoEvent) ? $EvoEvent : 'OnManagerWelcomePrerender';
 
 
 $StatsBoxSize = isset($StatsBoxSize) ? $StatsBoxSize : 'dashboard-block-full';
